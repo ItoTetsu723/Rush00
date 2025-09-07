@@ -6,7 +6,7 @@
 /*   By: tetito <tetito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 11:30:58 by tetito            #+#    #+#             */
-/*   Updated: 2025/09/07 09:40:30 by tetito           ###   ########.fr       */
+/*   Updated: 2025/09/07 16:44:10 by tetito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar(char c);
 
-void	print_x(int x)
+void	print_first_last(int x)
 {
 	int	i;
 
@@ -29,7 +29,7 @@ void	print_x(int x)
 	}
 }
 
-void	print_y(int x)
+void	print_middle(int x)
 {
 	int	i;
 
@@ -55,14 +55,14 @@ int	rush(int x, int y)
 	{
 		if ((i == 0) || (i == y - 1))
 		{
-			if (i != 0)
+			if (i == y - 1)
 				ft_putchar('\n');
-			print_x(x);
+			print_first_last(x);
 		}
 		else
 		{
 			ft_putchar('\n');
-			print_y(x);
+			print_middle(x);
 		}
 		i++;
 	}
