@@ -6,7 +6,7 @@
 /*   By: tetito <tetito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 11:30:04 by tetito            #+#    #+#             */
-/*   Updated: 2025/09/06 17:06:57 by tetito           ###   ########.fr       */
+/*   Updated: 2025/09/07 09:42:54 by tetito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	rush(int x, int y);
 
 int	main(void)
 {
-	if (rush(-5, 5))
+	if (rush(5, 5))
 		return (1);
 	else
 		return (0);

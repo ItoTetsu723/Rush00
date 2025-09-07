@@ -6,7 +6,7 @@
 /*   By: tetito <tetito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 11:30:58 by tetito            #+#    #+#             */
-/*   Updated: 2025/09/06 15:15:23 by tetito           ###   ########.fr       */
+/*   Updated: 2025/09/07 09:40:30 by tetito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ void	print_y(int x)
 	i = 0;
 	while (i < x)
 	{
-		if (i == 0)
-			ft_putchar('\n');
 		if ((i == 0) || (i == x - 1))
 			ft_putchar('|');
 		else
@@ -62,7 +60,10 @@ int	rush(int x, int y)
 			print_x(x);
 		}
 		else
+		{
+			ft_putchar('\n');
 			print_y(x);
+		}
 		i++;
 	}
 	ft_putchar('\n');
