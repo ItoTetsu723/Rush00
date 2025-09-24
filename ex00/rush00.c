@@ -6,7 +6,7 @@
 /*   By: tetito <tetito@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/06 11:30:58 by tetito            #+#    #+#             */
-/*   Updated: 2025/09/07 16:44:10 by tetito           ###   ########.fr       */
+/*   Updated: 2025/09/24 17:19:38 by tetito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	print_first_last(int x)
 			ft_putchar('o');
 		else
 			ft_putchar('-');
-		i++;
+		i = i + 1;
 	}
 }
 
@@ -53,17 +53,11 @@ int	rush(int x, int y)
 	i = 0;
 	while (i < y)
 	{
-		if ((i == 0) || (i == y - 1))
-		{
-			if (i == y - 1)
-				ft_putchar('\n');
+		if ((i == 0) || (i == y - 1) )
 			print_first_last(x);
-		}
 		else
-		{
-			ft_putchar('\n');
 			print_middle(x);
-		}
+		ft_putchar('\n');
 		i++;
 	}
 	ft_putchar('\n');
